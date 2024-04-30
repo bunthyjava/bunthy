@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="./../assets/css/style.css" type="text/css" rel="stylesheet"/>
+<link href="./../assets/css/mdb.min.css" type="text/css" rel="stylesheet"/>
+<link href="./../assets/fa/css/all.min.css" type="text/css" rel="stylesheet"/>
+<link href="./../assets/fonts/all.css" type="text/css" rel="stylesheet"/>
+<title></title>
+</head>
+<body class="mb-5 pb-5" id="body" >
+<nav class="navbar fixed-top pr-1 py-2 bg-white " >
+<div class=" ms-2  rounded-4 " onclick="history.back()"> 
+<div class="btn-back shadow-1 text-center rounded-4" >
+<span class="btn px-3 py-1 btn-secondary rounded-4" >
+<i class="fad fa-arrow-left" ></i>
+</span>
+</div>
+</div>
+<div class="p-0 dm-sans  m-0 h3" >
+<span class="text-danger" >Crazy</span> <span class="text-success" >Phisher </span>
+</div>
+<div class="premium-badge">
+<span class="acc-type d-block position-static mt-0 me-3 vt" >Free</span>
+</div></nav>
+
+<div class="tab-min shadow-5-strong" onclick="history.back()" >
+
+</div>  
+  
+<main class="m-2 mt-0" >
+
+<div class="card m-1 mt-5 p-3 text-center " >
+<h5 class="mb-3 text-primary " ><i class="fab fa-facebook" ></i> Facebook Apps</h5>
+<input type="url" value="https://drive.google.com/drive/folders/1-BChyfxQZozxD5G-gy6U0b5RSr6xKTtb" class="form-control "  >
+<a href="https://drive.google.com/drive/folders/1-BChyfxQZozxD5G-gy6U0b5RSr6xKTtb" 
+class="btn btn-primary "  >Open Link</a>
+</div>
+
+<div class="card m-1 mt-5 p-3 text-center " >
+<h5 class="mb-3 text-primary " ><i class="fab fa-google" ></i> Google Apps</h5>
+<input type="url" value="https://drive.google.com/drive/folders/1-4f0vIbyL1FjMGT528fZA4jG_Rt18j2Y" class="form-control " >
+<a href="https://drive.google.com/drive/folders/1-4f0vIbyL1FjMGT528fZA4jG_Rt18j2Y" 
+class="btn btn-primary "  >Open Link</a>
+</div>
+
+</main>
+
+
+<script type="text/javascript">
+
+let cpBtn = document.querySelectorAll(".form-control");
+let copyText = document.querySelectorAll(".form-control");
+
+for(let i=0 ; i < cpBtn.length;i++){
+
+cpBtn[i].onclick= function(){
+copyText[i].select();
+  copyText[i].setSelectionRange(0, 99999); // For mobile devices
+ }
+}
+</script>
+</body>
+</html>
